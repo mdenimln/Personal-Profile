@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    text-decoration: none;
+    list-style-type: none;
+    color: inherit;
+}
+body{
+    width: 100%;
+}
+/* class shorcut */
+.column{
+    flex-direction: column;
+}
+.j-c-sAround{
+    justify-content: space-around;
+}
+.a-i-center{
+    align-items: center;
+}
+
+
+.mode{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.5px 0.6px 7px lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+
+.head{
+    display: flex;
+    width: 90%;
+    margin: 40px auto;
+    flex-direction: row-reverse;
+}
+.profil{
+    width: 50%;
+    position: relative;
+    display: flex;
+    padding: 40px 0 0 0;
+}
+.profil h1{
+    padding: 20px 0;
+}
+.profil img{
+    width: 200px;
+    z-index: 1;
+}
+.profil .bg{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(62, 148, 247);
+    border-radius: 50%;
+    right: 80px;
+}
+.profil .sosmed{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 40px;
+}
+.sosmed i{
+    font-size: 20px;
+}
+
+.row{
+    width: 95%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 20px;
+}
+.row h3{
+    text-align: center;
+    border-bottom: 1px solid orange;
+    width: 30%;
+    border-radius: 5px;
+    color:rgb(62, 148, 247);
+    padding: 10px;
+   
+    transition: 0.8s;
+}
+.row h3:hover{
+    border-bottom: 1px solid rgb(62, 148, 247);
+    background-color: rgb(62, 148, 247);
+    transform: translateY(-10px) translateX(10px);
+    color: white;
+    box-shadow: 0.6px 0.6px 9px lightgray;
+}
+footer{
+    background-color: rgb(62, 148, 247);
+    margin: 100px 0 0 0;
+    text-align: center;
+    padding: 20px 0;
+    color: wheat;
+}
+footer span{
+    color:lightgreen;
+}
+.gelap{
+    background-color: black;
+    color: white;
+    transition: 1s;
+    cursor:pointer;
+}
+.head i:hover{
+    transition:1s;
+    transform: translateX(-5px);
+    border-radius:50%;
+}
+.text span{
+    color:darkred;
+    font-size:2.9rem;
+}
+
