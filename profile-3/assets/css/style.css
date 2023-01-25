@@ -1,0 +1,19 @@
+.jumbotron {
+  padding-top: 5rem;
+  background-color: #e2edff;
+}
+.jumbotron img {
+  margin-bottom: 30px;
+}
+#project {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.ani {
+  height: 30px;
+ bottom: 40px;
+}
