@@ -169,3 +169,10 @@
       content: '....';
     }
   }
+  @media(min-width : 900px) {
+    .about p{
+      width: 700px;
+      margin: 0 auto;
+    }
+    
+  }
