@@ -33,17 +33,21 @@
     padding: 50px 0;
   }
   .profile .img{
-    width: 200px;
+    width: 190px;
     height: 200px;
     /* background-color: rgb(255, 196, 0); */
     background-color: var(--dark);
     border-radius: 100% 0% 100% 0% / 100% 100% 0% 0%;
     display: flex;
     justify-content: center;
+    position: relative;
   }
   .profile img{
     width: 150px;
     border-radius: 2px;
+    position: absolute;
+    top: -20px;
+
   }
   .profile h2{
     position: sticky;
