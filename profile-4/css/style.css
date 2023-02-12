@@ -21,3 +21,12 @@ section{
     justify-content: center;
     align-items: center;
 }
+section#home{
+    background-color: rgb(255, 50, 187);
+}
+section#about{
+    background-color: rgb(78, 243, 255);
+}
+section#contact{
+    background-color: rgb(255, 208, 0);
+}
