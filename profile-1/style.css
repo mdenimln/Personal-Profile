@@ -11,17 +11,6 @@
 body{
     width: 100%;
 }
-/* class shorcut */
-.column{
-    flex-direction: column;
-}
-.j-c-sAround{
-    justify-content: space-around;
-}
-.a-i-center{
-    align-items: center;
-}
-
 
 .mode{
     width: 30px;
