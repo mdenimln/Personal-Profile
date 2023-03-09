@@ -4,51 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>personal profile 4</title>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="loading">
-        <svg width="64px" height="48px">
-            <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="back"></polyline>
-            <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="front"></polyline>
-        </svg>
+        <div class="newtons-cradle">
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            </div>
     </div>
-    <main>
-        <nav>
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#contact">contact</a>
-        </nav>
-        <section id="home">
-            <h1>home</h1>
-        </section>
-        <section id="about">
-            <h1>about</h1>
-        </section>
-        <section id="contact">
-            <h1>contact</h1>
-        </section>
-    </main>
+    <div class="row">
+        <div class="col">
+            <h1>Deni maulana</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium culpa quia totam dignissimos assumenda quos temporibus repellat aliquid, consequatur laborum id minus deleniti dolores. Animi illo excepturi cum voluptates!
+            </p>
+        </div>
 
-    <script>
+        <img src="img/roro.png" alt="">
+        
+    </div>
+
     
-    //  $(document).ready(function(){
-        setTimeout(function(){
-            $(".loading").hide();
-        }, 3500);
-       
-    //  })
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e){
-            e.preventDefault()
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior : "smooth"
-            })
-        })
-    })    
-    </script>
+
+    <div  class="row">
+        <h2>About</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, corporis laborum? Nemo quibusdam et, impedit a optio odio tempora? Fugiat minus vero adipisci veniam ut! Error ex impedit esse ab.</p>
+    </div>
+    
+    
+    <script src="js/app.js"></script>
 </body>
 </html>
