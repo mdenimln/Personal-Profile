@@ -6,7 +6,7 @@
   color: inherit;
 }
 body{
-  background-color: white;
+  background-color: rgb(0, 216, 151);
   width: 100%;
   height: 100vh;
   font-family: 'Source Sans Pro', sans-serif;
@@ -48,7 +48,7 @@ nav ul{
   margin-right: 20px;
 }
 nav ul li{
-  border: 1px solid var(--biru);
+  border: 1px solid #5F8D4E;
   padding: 5px 15px;
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -56,11 +56,11 @@ nav ul li{
   font-weight: 600;
 }
 nav ul li:hover{
-  background-color: var(--biru);
+  background-color: #285430;
   color: white;
 }
 .titit{
-  background-color: var(--biru);
+  background-color:#5F8D4E;
   color: white;
 }
 
@@ -83,7 +83,8 @@ nav ul li:hover{
 .seyHay img{
   width: 250px;
   height: 250px;
-  border-radius: 50%;
+  border-radius: 80%;
+  margin-top: 100px;
 }
 .row{
   width: 90%;
@@ -257,4 +258,12 @@ nav ul li:hover{
   transform: translateY(-20px);
   box-shadow: 4px 10px 5px 1px;
   border-right: 1px solid;
+}
+#merah{
+  color:rgb(7, 73, 73);
+}
+.h1 img{
+  width:350px;
+  height: 340px;
+  padding-top: 5px;
 }
