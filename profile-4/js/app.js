@@ -1,7 +1,7 @@
 //  $(document).ready(function(){
     setTimeout(function(){
         document.querySelector(".loading").style = 'display : none';
-    }, 3000);
+    }, 1300);
    
 //  })
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

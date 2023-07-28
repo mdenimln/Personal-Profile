@@ -1,123 +1,174 @@
 *{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
-.row{
+body {
+  border: 1px solid;
+  width: 100%;
+}
 
+ /*  */
+ header#header {
+   border: 1px solid;
+   width: 200px;
+ }
+ nav{
   display: flex;
-  width: 90%;
-  margin: 0 auto;
-  gap: 20px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  /* border: 1px solid; */
+ }
+ .container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: 1px solid;
 }
-.col{
-  width: 45%;
-}
-.col h1{
-  font-size: 4em;
-}
-.col p {
-  font-size: 1.3em;
-}
-.row img{
-  
-  width: 350px;
-}
-body .row:nth-child(3){
-  background-color: rgb(201, 187, 111);
-  flex-direction: column;
-  border-radius: 10px;
-  padding: 50px 0;
-}
-body .row:nth-child(3) p{
-  text-align: center;
-  width: 50%;
+.dropbtn {
+  background-color: #4CAF50;
   color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
-.loading{
-  z-index: 999;
-background-color: #eee;
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-display: flex;
-justify-content: center;
-align-items: center;
+
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
-.newtons-cradle {
-  --uib-size: 50px;
-  --uib-speed: 1.2s;
-  --uib-color: #474554;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: var(--uib-size);
-  height: var(--uib-size);
-  gap: 5px;
- }
- 
- .newtons-cradle__dot {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 100px;
-  width: 25px;
-  transform-origin: center top;
- }
- 
- .newtons-cradle__dot::after {
-  content: '';
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
-  width: 100px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: var(--uib-color);
- }
- 
- .newtons-cradle__dot:first-child {
-  animation: swing var(--uib-speed) linear infinite;
- }
- 
- .newtons-cradle__dot:last-child {
-  animation: swing2 var(--uib-speed) linear infinite;
- }
- 
- @keyframes swing {
-  0% {
-   transform: rotate(0deg);
-   animation-timing-function: ease-out;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.item {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
+.item-1 {
+  background-color: rgb(250, 87, 103);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  animation: item-1_move 3s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+.item-2 {
+  background-color: rgb(121, 68, 228);
+  top: 0;
+  right: 0;
+  animation: item-2_move 3s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+.item-3 {
+  background-color: rgb(27, 145, 247);
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  animation: item-3_move 3s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+.item-4 {
+  background-color: rgb(250, 194, 76);
+  bottom: 0;
+  left: 0;
+  animation: item-4_move 3s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+@keyframes item-1_move {
+  0%, 100% {
+    transform: translate(0, 0)
   }
- 
+
   25% {
-   transform: rotate(70deg);
-   animation-timing-function: ease-in;
+    transform: translate(0, 30px)
   }
- 
+
   50% {
-   transform: rotate(0deg);
-   animation-timing-function: linear;
+    transform: translate(30px, 30px)
   }
- }
- 
- @keyframes swing2 {
-  0% {
-   transform: rotate(0deg);
-   animation-timing-function: linear;
-  }
- 
-  50% {
-   transform: rotate(0deg);
-   animation-timing-function: ease-out;
-  }
- 
+
   75% {
-   transform: rotate(-70deg);
-   animation-timing-function: ease-in;
+    transform: translate(30px, 0)
   }
- }
- 
+}
+
+@keyframes item-2_move {
+  0%, 100% {
+    transform: translate(0, 0)
+  }
+
+  25% {
+    transform: translate(-30px, 0)
+  }
+
+  50% {
+    transform: translate(-30px, 30px)
+  }
+
+  75% {
+    transform: translate(0, 30px)
+  }
+}
+
+@keyframes item-3_move {
+  0%, 100% {
+    transform: translate(0, 0)
+  }
+
+  25% {
+    transform: translate(0, -30px)
+  }
+
+  50% {
+    transform: translate(-30px, -30px)
+  }
+
+  75% {
+    transform: translate(-30px, 0)
+  }
+}
+
+@keyframes item-4_move {
+  0%, 100% {
+    transform: translate(0, 0)
+  }
+
+  25% {
+    transform: translate(30px, 0)
+  }
+
+  50% {
+    transform: translate(30px, -30px)
+  }
+
+  75% {
+    transform: translate(0, -30px)
+  }
+}

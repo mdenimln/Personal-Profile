@@ -31,18 +31,22 @@ body{
     width: 90%;
     margin: 40px auto;
     flex-direction: row-reverse;
+    justify-content: space-around;
 }
 .profil{
-    width: 50%;
+    width: 40%;
     position: relative;
-    display: flex;
     padding: 40px 0 0 0;
 }
-.profil h1{
+.profil:first-child {
+    display: flex;
+    justify-content: space-evenly;
+}
+.profil h1,.profil p{
     padding: 20px 0;
 }
 .profil img{
-    width: 200px;
+    width: 190px;
     z-index: 1;
 }
 .profil .bg{
