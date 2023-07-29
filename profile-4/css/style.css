@@ -2,29 +2,32 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700;900&display=swap');
 body {
-  border: 1px solid;
   width: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 
  /*  */
  header#header {
-   border: 1px solid;
+   /* border: 1px solid; */
    width: 200px;
  }
  nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid; */
+  max-width: 800px;
+  margin: 0 auto;
+
  }
- .container {
-  position: relative;
+ .logo{  position: relative;
   width: 60px;
   height: 60px;
-  border: 1px solid;
+
 }
 .dropbtn {
   background-color: #4CAF50;
@@ -171,4 +174,64 @@ body {
   75% {
     transform: translate(0, -30px)
   }
+}
+
+/*  */
+
+#about{
+  background: #F7C945;  
+}
+#about .container{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#about .container .about-description{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+#about .container .about-description h1{
+  font-weight: 700;
+  font-size: 4.5em;
+  letter-spacing: 0.1px;
+  line-height: 1.6cm;
+}
+#about .container .about-description p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 2.5ch;
+}
+#about .container .about-image{  
+
+}
+#about .container .about-image img{ 
+  width: 400px;
+}
+#about .container .about-description .button{
+  display: flex;
+  gap: 20px;
+}
+#about .container .about-description .button a:first-child{
+  background-color: black;
+  color: white;
+}
+#about .container .about-description .button a:last-child{
+  border: 2px solid black;
+  color: black;
+}
+#about .container .about-description .button a{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 80px;
+  border-radius: 10px;
+  font-size: 1.4em;
+  font-weight: 700;
 }

@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>personal profile 4</title>
 
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+    <!-- css main -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="utils/uiLoading.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700;900&display=swap" rel="stylesheet">
+   
 </head>
 <body>
     <div class="loading">
@@ -21,34 +31,51 @@
      
     <header id="head">
         <nav>        
-            <div class="container">
+            <div class="logo">
                 <div class="item item-1"></div>
                 <div class="item item-2"></div>
                 <div class="item item-3"></div>
                 <div class="item item-4"></div>
             </div>
             <div class="nav-list">
-                <button>dark</button> 
+                <i class="fa-solid fa-sun"></i>
+              
                 <div class="dropdown">
-                    <button class="dropbtn">Dropdown</button>
+                    <button class="dropbtn"><i class="fa-solid fa-chevron-down"></i></button>
                     <div class="dropdown-content">
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
                     <a href="#">Link 3</a>
                     </div>
-                  </div>  
+                </div>  
             </div>
         </nav>
     </header>    
     <main id="main">
-
+        <section id="about">
+            <div class="container">
+                <div class="about-description">
+                    <h1>Muhamad Deni Maulana</h1>
+                    <p>Saya adalah seorang mahasiswa yang tertarik dengan dunia komunikasi Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident pariatur quod delectus officia cupiditate eos. Aliquid cumque perferendis, recusandae asperiores eaque vitae unde autem vel, quod deleniti facilis quam odit!</p> 
+                    <div class="button">
+                        <a href="">my profile</a>
+                        <a href="">my portfolio</a>
+                    </div>       
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur, 
+                    </span>        
+                </div>
+                <div class="about-image">
+                    <img src="img/1my-picture.png" alt="mypicture">
+                </div>           
+            </div>
+        </section>
     </main>
     <footer id="footer">
 
     </footer>
     
-    
-    
+
     <script src="js/app.js"></script>
 </body>
 </html>
