@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    text-decoration: none;
+    list-style-type: none;
+}
+.gelap{
+    background-color: black;
+    color: white;
+    transition: 1s;
+    cursor:pointer;
+}
+.mode{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.5px 0.6px 7px lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+ul{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    left: 75px;
+    top: 20px;
+}
+ul li{
+    padding: 10px 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.774);
+    color: white;
+}
+ul li a{
+    color: white;
+}
+
+.container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+.container h1{
+    text-align: center;
+}
+.row{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1%;
+    flex-wrap: wrap;
+}
+.row .col{
+    width: 24%;
+}
+.row .col img{
+    width: 100%;
+    border-radius: 10px;
+}

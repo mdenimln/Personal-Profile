@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/brands.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <link rel="stylesheet" href="../css/conatct.css">
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="../index.html">Kembali</a>
+        </li>
+    </ul>
+    <div class="mode">
+        <i class="fa-regular fa-moon"></i>
+    </div>
+
+    <div class="container">
+        <h1>Berkomunikasi dengan saya dengan mengirim pesan kepada saya</h1>
+
+        <div class="contact">
+            <div class="sosmed ">
+                <a target="_blank" href="https://www.instagram.com/ooooet_?igshid=NTc4MTIwNjQ2YQ%3D%3D">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a target="_blank" href="https://wa.me/qr/H5WVLHKPD7PVO1">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a target="_blank" href="https://facebook.com/hankisadidanyut.macamtai?_rdc=1&_rdr">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a target="_blank" href="">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </div>
+            <img src="../img/mseg.png" alt="">
+        </div>
+    </div>
+    <script>
+        const mode = document.querySelector('.mode');
+        const body = document.querySelector('body');
+        const text = document.querySelector('.text');
+
+        mode.onclick = function() {
+            body.classList.toggle('gelap');
+        }
+    </script>
+</body>
+</html>

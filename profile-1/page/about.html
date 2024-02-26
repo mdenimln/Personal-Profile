@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/brands.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="../index.html">Kembali</a>
+        </li>
+    </ul>
+    <div class="mode">
+        <i class="fa-regular fa-moon"></i>
+    </div>
+    <section class="about" id="about">
+        <h1 class="heading" >Sedikit Tentang Saya</h1>
+        
+        <div class="column">
+            <div class="image"">
+                <img loading="lazy" src="../img/WhatsApp_Image_2023-10-25_at_13.34.18-removebg-preview.png" alt="">
+            </div>
+
+            <div class="content" >
+                <h3>Raihan Sandi</h3>
+                <p>The Naruto Series Features Characters Created by Masashi Kishimoto. The Main Character In This Series Is Naruto Uzumaki, An Orphan From Konoha Village, One Of The Famous Villages In The Ninja World. Naruto is characterized as a ninja who is full of surprises, passionate, cheerful, hyperactive, clumsy, naive, and ambitious in achieving his goal of becoming a Hokage, leader and the strongest ninja in Konoha.
+                This series also involves other fictional characters such as Sasuke Uchiha as a descendant of the Uchiha clan who becomes a significant friend to Naruto, Sakura Haruno as a teammate who Naruto likes, Kakashi Hatake as a Jounin who becomes a teacher for Naruto, Sasuke and Sakura. This series also features a fictitious organization, namely Akatsuki and whose members are the antagonists.</p>
+                
+            </div>
+        </div>
+    </section>
+    <script>
+        const mode = document.querySelector('.mode');
+        const body = document.querySelector('body');
+        const text = document.querySelector('.text');
+
+        mode.onclick = function() {
+            body.classList.toggle('gelap');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+   
+  <!-- link css -->
+  
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <link rel="stylesheet" href="css/brands.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+ 
+  <!-- link css -->
+  <link rel="stylesheet" href="css/portfolio.css">
+  
+  <style>
+    #btn{
+      padding: 20px;
+    }
+  </style>
+  
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="btn">
+    <li>        
+      <i class="fa-regular fa-moon"></i>
+    </li>
+  </div>
+  
+  <nav id="nav">
+    <h1 class="a">Fi <span id="merah">jar</span></h1>
+    <ul>
+      <li class="titit"><a href="home.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  
+
+  
+  <div class="row top" style="width: 100%;">
+    <div style="display: flex; align-items: center; gap: 20px; flex-direction: column; width: 100%;">
+      <h1 class="c">ABOUT</h1>
+      <div id="b">
+        <p class="center">Seorang pelajar Smk Fajar Utama , dengan jurusan SIJA  Saya merupakan seseorang yang berorientasi pada perkembangan teknologi.</p>
+        <p class="center">Saya suka Anime Tsubasa,Dia Sangat Jago Main Bola Nya</p>
+      </div>
+    <img src="img/bass.png" alt="">
+  </div>
+  
+  <script>
+    const tom = document.getElementById('btn');
+    const body = document.querySelector('body');
+    const nav = document.querySelector('#nav');
+    const span = document.querySelector('#merah');
+    const prg = document.querySelector('#b');
+    const a = document.querySelector('.a')
+    const sp = document.querySelector('.c')
+    const textAnimation = document.querySelector('.h1A')
+    
+    tom.onclick = function() {
+      body.classList.toggle('black')
+      nav.classList.toggle('bodasbg')
+      span.classList.toggle('merah')
+      prg.classList.toggle('bodas')
+      a.classList.toggle('bodas')
+      sp.classList.toggle('bodas')
+      textAnimation.classList.toggle('bodas')
+    }
+    
+  </script>
+</body>
+</html>

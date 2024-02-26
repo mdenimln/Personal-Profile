@@ -6,10 +6,11 @@
     font-family: 'Space Mono', monospace;
     text-decoration: none;
     list-style-type: none;
-    color: inherit;
 }
 body{
     width: 100%;
+    height: 100vh;
+    position: relative;
 }
 
 .mode{
@@ -24,6 +25,7 @@ body{
     position: fixed;
     right: 20px;
     top: 20px;
+    cursor: pointer;
 }
 
 .head{
@@ -46,8 +48,9 @@ body{
     padding: 20px 0;
 }
 .profil img{
-    width: 190px;
+    width: 300px;
     z-index: 1;
+    margin-top: -150px;
 }
 .profil .bg{
     position: absolute;
@@ -64,7 +67,7 @@ body{
     gap: 40px;
 }
 .sosmed i{
-    font-size: 20px;
+    font-size: 1.5em;
 }
 
 .row{
@@ -74,17 +77,17 @@ body{
     flex-wrap: wrap;  
     gap: 20px;
 }
-.row h3{
+.row a{
     text-align: center;
     border-bottom: 1px solid orange;
     width: 30%;
     border-radius: 5px;
     color:rgb(62, 148, 247);
     padding: 10px;
-   
+    cursor: pointer;
     transition: 0.8s;
 }
-.row h3:hover{
+.row a:hover{
     border-bottom: 1px solid rgb(62, 148, 247);
     background-color: rgb(62, 148, 247);
     transform: translateY(-10px) translateX(10px);
@@ -92,6 +95,9 @@ body{
     box-shadow: 0.6px 0.6px 9px lightgray;
 }
 footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     background-color: rgb(62, 148, 247);
     margin: 100px 0 0 0;
     text-align: center;

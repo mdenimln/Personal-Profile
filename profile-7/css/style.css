@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  :root{
+    --dark: #7FB77E;
+    --light: #F7F6DC;
+  }
+  
+  body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--light);
+  }
+  
+  
+  .head{
+    width: 100%;
+    background-color:  var(--dark);
+  }
+  .head h1{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.6em;
+    color: var(--light);
+  }
+  
+  .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+  .profile .img{
+    position: relative;
+    width: 250px;
+    height: 300px;
+  }
+  .profile img{
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: -20px;
+
+  }
+  .profile h2{
+    z-index: 3;
+    font-size: 1.5em;
+    margin-top: 100px;
+  }
+  .profile p{
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-top: 3px;
+  }
+  .profile p span{
+    color: var(--dark);
+  }
+  .sosmed{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  .sosmed i{
+    color: var(--dark);
+  }
+  .about{
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+  }
+  .about h4{
+    font-size: 1.5em;
+  }
+  .garis{
+    width: 40%;
+    height: 2px;
+    margin: 10px auto;
+    background-color: lightgray;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .garis span{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--dark);
+    border-radius: 50%;
+    border: 5px solid var(--light);
+  }
+  .about p{
+    padding: 20px 0;
+    line-height: 1.7em;
+    font-size: 1.2em;
+  }
+  .about p span{
+    color: var(--dark);
+    font-weight: 600;
+  }
+  .container h1{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .portfolio{
+    display: flex;
+    width: 90%;
+    max-width: 1100px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .portfolio .col{
+    width: 24%;
+    margin-bottom: 10px;
+  }
+  .portfolio .col img{
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  footer{
+    width: 55%;
+    height: 70px;
+    background-color: var(--dark);
+    margin-left: 45%;
+    border-top-left-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer h4{
+    color: var(--light);
+    font-size: 1.2em;
+  }
+  footer h4:before{
+    content: '';
+    animation: animate 10s linear infinite;
+  }
+  @keyframes animate {
+    0%{
+      content: 'TERIMA KASIH';
+    }
+    40%{
+      content: 'KAWAN-KAWAN';
+    }
+    60%{
+      content: 'WASSALAMUALIKUM..';
+    }
+    100%{
+      content: '....';
+    }
+  }
+  @media(min-width : 900px) {
+    .about p{
+      width: 700px;
+      margin: 0 auto;
+    }
+    
+  }

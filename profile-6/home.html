@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <link rel="stylesheet" href="css/brands.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+ 
+  <!-- link css -->
+  <link rel="stylesheet" href="css/portfolio.css">
+  
+  <title>bikin web</title>
+</head>
+<body>
+  
+  <nav id="nav">
+    <h1 class="a">Fi <span id="merah">jar</span></h1>
+    <ul>
+      <li class="titit"><a href="home.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  
+
+  <section class="nav-icon">
+    <ul class="icon">
+      <li>
+        <i class="fa-brands fa-instagram"></i>
+      </li>
+      <li>
+        <i class="fa-brands fa-whatsapp"></i>
+      </li>
+      <li>
+        <i class="fa-brands fa-facebook"></i>
+      </li>
+      <li>
+        <i class="fa-regular fa-envelope"></i>
+      </li>    
+    </ul>
+    <div id="btn">
+      <li>        
+        <i class="fa-regular fa-moon"></i>
+      </li>
+    </div>
+  </section>
+
+  <section class="profile">
+    <div class="image">      
+      <img src="img/fijar1.jpeg">
+    </div>
+
+    <div class="row">
+      <div class="textA">
+        <h1 class="h1A"><span>|</span></h1>
+        <span class="c">Nama saya Muhamad Fijar</span>
+      </div>
+      <div id="b">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum temporibus pariatur corrupti quia sequi optio voluptatibus enim! Aspernatur, hic dolorem nisi voluptatem officiis exercitationem aliquid vero quae recusandae, adipisci fugiat.
+          Seorang pelajar Smk Fajar Utama , dengan jurusan SIJA  Saya merupakan seseorang yang berorientasi pada perkembangan teknologi.</p>
+      </div>      
+    </div>
+  </section>
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+ 
+  <script>
+    const tom = document.getElementById('btn');
+    const body = document.querySelector('body');
+    const nav = document.querySelector('#nav');
+    const span = document.querySelector('#merah');
+    const prg = document.querySelector('#b');
+    const a = document.querySelector('.a')
+    const sp = document.querySelector('.c')
+    const textAnimation = document.querySelector('.h1A')
+    
+    tom.onclick = function() {
+      body.classList.toggle('black')
+      nav.classList.toggle('bodasbg')
+      span.classList.toggle('merah')
+      prg.classList.toggle('bodas')
+      a.classList.toggle('bodas')
+      sp.classList.toggle('bodas')
+      textAnimation.classList.toggle('bodas')
+    }
+    
+  </script>
+  
+</body>
+</html>
